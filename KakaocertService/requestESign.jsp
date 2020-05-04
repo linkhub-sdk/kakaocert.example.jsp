@@ -29,13 +29,13 @@
   eSignRequest.setExpires_in(60);
 
   // 수신자 생년월일, 형식 : YYYYMMDD
-  eSignRequest.setReceiverBirthDay("19900108");
+  eSignRequest.setReceiverBirthDay("19700101");
 
   // 수신자 휴대폰번호
-  eSignRequest.setReceiverHP("01043245117");
+  eSignRequest.setReceiverHP("01012345117");
 
   // 수신자 성명
-  eSignRequest.setReceiverName("정요한");
+  eSignRequest.setReceiverName("테스트");
 
   // 인증요청 메시지 부가내용, 카카오톡 인증메시지 중 상단에 표시
   eSignRequest.setTMSMessage("부가메시지 내용");
