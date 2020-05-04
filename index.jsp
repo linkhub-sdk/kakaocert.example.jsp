@@ -13,24 +13,24 @@
     <fieldset class="fieldset1">
         <legend>간편 전자서명 API</legend>
         <ul>
-            <li><a href="KakaocertService/requestVerifyAuth">requestVerifyAuth</a> - 전자서명 요청 API</li>
-            <li><a href="KakaocertService/getVerifyAuthResult">getVerifyAuthResult</a> - 전자서명 결과확인 API</li>
+            <li><a href="KakaocertService/requestESign.jsp">requestESign</a> - 본인인증 요청 API</li>
+            <li><a href="KakaocertService/getESignResult.jsp">getESignResult</a> - 본인인증 결과확인 API</li>
         </ul>
     </fieldset>
 
     <fieldset class="fieldset1">
         <legend>본인인증 API</legend>
         <ul>
-            <li><a href="KakaocertService/requestESign">requestESign</a> - 본인인증 요청 API</li>
-            <li><a href="KakaocertService/getESignResult">getESignResult</a> - 본인인증 결과확인 API</li>
+            <li><a href="KakaocertService/requestVerifyAuth.jsp">requestVerifyAuth</a> - 전자서명 요청 API</li>
+            <li><a href="KakaocertService/getVerifyAuthResult.jsp">getVerifyAuthResult</a> - 전자서명 결과확인 API</li>
         </ul>
     </fieldset>
 
     <fieldset class="fieldset1">
         <legend>자동이체 출금동의 API</legend>
         <ul>
-            <li><a href="KakaocertService/requestCMS">requestCMS</a> - 자동이체 출금동의 요청 API</li>
-            <li><a href="KakaocertService/getCMSResult">getCMSResult</a> - 자동이체 출금동의 결과 확인 API</li>
+            <li><a href="KakaocertService/requestCMS.jsp">requestCMS</a> - 자동이체 출금동의 요청 API</li>
+            <li><a href="KakaocertService/getCMSResult.jsp">getCMSResult</a> - 자동이체 출금동의 결과 확인 API</li>
         </ul>
     </fieldset>
 </div>
