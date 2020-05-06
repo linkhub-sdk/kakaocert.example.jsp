@@ -48,7 +48,7 @@
   // 인증요청 메시지 제목, 카카오톡 인증메시지 중 "요청구분" 항목에 표시
   requestObj.setTMSTitle("TMS Title");
 
-  // 원문, 보안을 위해 1회용으로 생성
+  // Token 원문, 보안을 위해 1회용으로 생성
 	// 인증완료시, getVerifyAuthResult API의 returnToken 항목값으로 반환
   requestObj.setToken("20200504-001");
 

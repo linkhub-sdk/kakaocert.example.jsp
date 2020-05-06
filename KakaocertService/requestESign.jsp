@@ -48,7 +48,7 @@
   // 인증요청 메시지 제목, 카카오톡 인증메시지 중 "요청구분" 항목에 표시
   eSignRequest.setTMSTitle("TMS Title");
 
-  // 전자서명 원문
+  // Token 원문
   eSignRequest.setToken("token value");
 
   /*
