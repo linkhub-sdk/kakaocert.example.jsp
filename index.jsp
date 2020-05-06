@@ -13,16 +13,16 @@
     <fieldset class="fieldset1">
         <legend>간편 전자서명 API</legend>
         <ul>
-            <li><a href="KakaocertService/requestESign.jsp">requestESign</a> - 본인인증 요청 API</li>
-            <li><a href="KakaocertService/getESignResult.jsp">getESignResult</a> - 본인인증 결과확인 API</li>
+            <li><a href="KakaocertService/requestESign.jsp">requestESign</a> - 전자서명 요청 API</li>
+            <li><a href="KakaocertService/getESignResult.jsp">getESignResult</a> - 전자서명 결과확인 API</li>
         </ul>
     </fieldset>
 
     <fieldset class="fieldset1">
         <legend>본인인증 API</legend>
         <ul>
-            <li><a href="KakaocertService/requestVerifyAuth.jsp">requestVerifyAuth</a> - 전자서명 요청 API</li>
-            <li><a href="KakaocertService/getVerifyAuthResult.jsp">getVerifyAuthResult</a> - 전자서명 결과확인 API</li>
+            <li><a href="KakaocertService/requestVerifyAuth.jsp">requestVerifyAuth</a> - 본인인증 요청 API</li>
+            <li><a href="KakaocertService/getVerifyAuthResult.jsp">getVerifyAuthResult</a> - 본인인증 결과확인 API</li>
         </ul>
     </fieldset>
 

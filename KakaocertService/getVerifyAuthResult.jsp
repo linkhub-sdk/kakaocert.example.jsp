@@ -37,35 +37,32 @@
 			<br/>
 			<fieldset class="fieldset1">
 				<legend>본인인증 결과정보 확인</legend>
-				<fieldset class="fieldset2">
-					<legend>ResultVerifyAuth</legend>
-					<ul>
-						<li>receiptID(접수아이디) : <%= result.getReceiptID()%></li>
-          	<li>clientCode (이용기관코드) : <%= result.getClientCode()%></li>
-          	<li>clientName (이용기관명) : <%= result.getClientName()%></li>
-          	<li>subClientName (별칭) : <%= result.getSubClientName()%></li>
-          	<li>subClientCode (별칭코드) : <%= result.getSubClientCode()%></li>
-          	<li>state (상태) : <%= result.getState()%></li>
-          	<li>token (원문) : <%= result.getToken()%></li>
-          	<li>returnToken (전자서명 데이터 전문) : <%= result.getReturnToken()%></li>
-          	<li>receiverHP (수신자 휴대폰번호) : <%= result.getReceiverHP()%></li>
-          	<li>receiverName (수신자 성명) : <%= result.getReceiverName()%></li>
-          	<li>receiverBirthday (수신자 생년월일) : <%= result.getReceiverBirthday()%></li>
-          	<li>expires_in (인증요청 만료시간(초)	) : <%= result.getExpires_in()%></li>
-            <li>callCenterNum(고객센터 전화번호) : <%= result.getCallCenterNum()%></li>
-            <li>tmstitle (인증요청 메시지 제목) : <%= result.getTmstitle()%></li>
-            <li>tmsmessage (인증요청 메시지 부가내용) : <%= result.getTmsmessage()%></li>
-            <li>allowSimpleRegistYN	(은행계좌 실명확인 생략여부) : <%= result.isAllowSimpleRegistYN()%></li>
-            <li>verifyNameYN (수신자 실명확인 여부) : <%= result.isVerifyNameYN()%></li>
-            <li>requestDT (카카오 인증서버 등록일시) : <%= result.getRequestDT()%></li>
-            <li>expireDT (인증 만료일시) : <%= result.getExpireDT()%></li>
-            <li>regDT (인증요청 등록일시) : <%= result.getRegDT()%></li>
-            <li>viewDT (수신자 카카오톡 인증메시지 확인일시) : <%= result.getViewDT()%></li>
-            <li>completeDT (수신자 카카오톡 전자서명 완료일시	) : <%= result.getCompleteDT()%></li>
-            <li>verifyDT (서명 검증일시) : <%= result.getVerifyDT()%></li>
-            <li>payload (payload) : <%= result.getPayload()%></li>
-					</ul>
-				</fieldset>
+				<ul>
+					<li>receiptID(접수아이디) : <%= result.getReceiptID()%></li>
+        	<li>clientCode (이용기관코드) : <%= result.getClientCode()%></li>
+        	<li>clientName (이용기관명) : <%= result.getClientName()%></li>
+        	<li>subClientName (별칭) : <%= result.getSubClientName()%></li>
+        	<li>subClientCode (별칭코드) : <%= result.getSubClientCode()%></li>
+        	<li>state (상태) : <%= result.getState()%></li>
+        	<li>token (원문) : <%= result.getToken()%></li>
+        	<li>returnToken (전자서명 데이터 전문) : <%= result.getReturnToken()%></li>
+        	<li>receiverHP (수신자 휴대폰번호) : <%= result.getReceiverHP()%></li>
+        	<li>receiverName (수신자 성명) : <%= result.getReceiverName()%></li>
+        	<li>receiverBirthday (수신자 생년월일) : <%= result.getReceiverBirthday()%></li>
+        	<li>expires_in (인증요청 만료시간(초)	) : <%= result.getExpires_in()%></li>
+          <li>callCenterNum(고객센터 전화번호) : <%= result.getCallCenterNum()%></li>
+          <li>tmstitle (인증요청 메시지 제목) : <%= result.getTmstitle()%></li>
+          <li>tmsmessage (인증요청 메시지 부가내용) : <%= result.getTmsmessage()%></li>
+          <li>allowSimpleRegistYN	(은행계좌 실명확인 생략여부) : <%= result.isAllowSimpleRegistYN()%></li>
+          <li>verifyNameYN (수신자 실명확인 여부) : <%= result.isVerifyNameYN()%></li>
+          <li>requestDT (카카오 인증서버 등록일시) : <%= result.getRequestDT()%></li>
+          <li>expireDT (인증 만료일시) : <%= result.getExpireDT()%></li>
+          <li>regDT (인증요청 등록일시) : <%= result.getRegDT()%></li>
+          <li>viewDT (수신자 카카오톡 인증메시지 확인일시) : <%= result.getViewDT()%></li>
+          <li>completeDT (수신자 카카오톡 전자서명 완료일시	) : <%= result.getCompleteDT()%></li>
+          <li>verifyDT (서명 검증일시) : <%= result.getVerifyDT()%></li>
+          <li>payload (payload) : <%= result.getPayload()%></li>
+				</ul>
 			</fieldset>
 		 </div>
 	</body>
