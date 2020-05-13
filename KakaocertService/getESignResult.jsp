@@ -46,9 +46,6 @@
         	<li>state (상태) : <%= result.getState()%></li>
         	<li>token (원문) : <%= result.getToken()%></li>
         	<li>signedData (전자서명 데이터 전문) : <%= result.getSignedData()%></li>
-        	<li>receiverHP (수신자 휴대폰번호) : <%= result.getReceiverHP()%></li>
-        	<li>receiverName (수신자 성명) : <%= result.getReceiverName()%></li>
-        	<li>receiverBirthday (수신자 생년월일) : <%= result.getReceiverBirthday()%></li>
         	<li>expires_in (인증요청 만료시간(초)) : <%= result.getExpires_in()%></li>
           <li>callCenterNum(고객센터 전화번호) : <%= result.getCallCenterNum()%></li>
           <li>tmstitle (인증요청 메시지 제목) : <%= result.getTmstitle()%></li>
