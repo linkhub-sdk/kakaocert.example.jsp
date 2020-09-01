@@ -19,13 +19,16 @@
   String ClientCode = "020040000001";
 
 	// 전자서명 요청시 반환된 접수아이디
-	String receiptID = "020050610003200001";
+	String receiptID = "020090110311100001";
+
+  // 앱스킴 성공시 반환되는 서명값
+	String signature = "abcd";
 
   ResultESign result = null;
 
 	try {
 
-    result = kakaocertService.getESignResult(ClientCode, receiptID);
+    result = kakaocertService.getESignResult(ClientCode, receiptID, signature);
 
 	} catch(KakaocertException ke) {
     throw ke;
@@ -59,6 +62,8 @@
           <li>completeDT (수신자 카카오톡 전자서명 완료일시) : <%= result.getCompleteDT()%></li>
           <li>verifyDT (서명 검증일시) : <%= result.getVerifyDT()%></li>
           <li>payload (payload) : <%= result.getPayload()%></li>
+          <li>tx_id (카카오톡 트랜잭션아이디) : <%= result.getTx_id()%></li>
+          <li>appUseYN (AppToApp 인증여부) : <%= result.isAppUseYN()%></li>
 				</ul>
 			</fieldset>
 		 </div>

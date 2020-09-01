@@ -11,10 +11,11 @@
     <p class="heading1">kakaocert SDK jsp Example.</p>
     <br/>
     <fieldset class="fieldset1">
-        <legend>간편 전자서명 API</legend>
+        <legend>전자서명 API</legend>
         <ul>
             <li><a href="KakaocertService/requestESign.jsp">requestESign</a> - 전자서명 요청 API</li>
-            <li><a href="KakaocertService/getESignResult.jsp">getESignResult</a> - 전자서명 결과확인 API</li>
+            <li><a href="KakaocertService/getESignResult.jsp">getESignResult</a> - 전자서명 결과확인 API (Talk Message 방식)</li>
+            <li><a href="KakaocertService/getESignResultApp.jsp">getESignResult</a> - 전자서명 결과확인 API (App To App 방식)</li>
         </ul>
     </fieldset>
 

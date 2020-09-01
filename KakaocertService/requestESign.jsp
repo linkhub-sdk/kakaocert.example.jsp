@@ -10,6 +10,7 @@
 
 <%@page import="com.kakaocert.api.esign.RequestESign"%>
 <%@page import="com.kakaocert.api.KakaocertException"%>
+<%@page import="com.kakaocert.api.ResponseESign"%>
 
 <%
 	/*
@@ -18,6 +19,10 @@
 
   // 이용기관코드, 파트너가 등록한 이용기관의 코드, (파트너 사이트에서 확인가능)
   String ClientCode = "020040000001";
+
+  // AppToApp 인증요청 여부
+	// true - AppToApp 인증방식, false - Talk Message 인증방식
+	boolean isAppUseYN = true;
 
   // 전자서명 요청 정보 Object
   RequestESign eSignRequest = new RequestESign();
@@ -29,20 +34,22 @@
   eSignRequest.setExpires_in(60);
 
   // 수신자 생년월일, 형식 : YYYYMMDD
-  eSignRequest.setReceiverBirthDay("19700101");
+  eSignRequest.setReceiverBirthDay("19900108");
 
   // 수신자 휴대폰번호
-  eSignRequest.setReceiverHP("01012345117");
+  eSignRequest.setReceiverHP("01043245117");
 
   // 수신자 성명
-  eSignRequest.setReceiverName("테스트");
+  eSignRequest.setReceiverName("정요한");
 
   // 인증요청 메시지 부가내용, 카카오톡 인증메시지 중 상단에 표시
+  // AppToApp 인증요청 방식 이용시 적용되지 않음
   eSignRequest.setTMSMessage("부가메시지 내용");
 
   // 별칭코드, 이용기관이 생성한 별칭코드 (파트너 사이트에서 확인가능)
   // 카카오톡 인증메시지 중 "요청기관" 항목에 표시
   // 별칭코드 미 기재시 이용기관의 이용기관명이 "요청기관" 항목에 표시
+  // AppToApp 인증요청 방식 이용시 적용되지 않음
   eSignRequest.setSubClientID("");
 
   // 인증요청 메시지 제목, 카카오톡 인증메시지 중 "요청구분" 항목에 표시
@@ -71,10 +78,11 @@
   // PayLoad, 이용기관이 API 요청마다 생성한 payload(메모) 값
   eSignRequest.setPayLoad("memo Info");
 
-  String receiptID = null;
+  ResponseESign result = null;
 
   try {
-    receiptID = kakaocertService.requestESign(ClientCode, eSignRequest);
+
+    result = kakaocertService.requestESign(ClientCode, eSignRequest, isAppUseYN);
 
   } catch(KakaocertException ke) {
     throw ke;
@@ -86,9 +94,10 @@
 			<p class="heading1">Response</p>
 			<br/>
 			<fieldset class="fieldset1">
-				<legend>간편 전자서명 요청</legend>
+				<legend>전자서명 요청</legend>
 				<ul>
-					<li>접수아이디 : <%=receiptID%></li>
+					<li>접수아이디(receiptId) : <%=result.getReceiptId()%></li>
+          <li>[AppToApp 앱스킴 호출용] 카카오톡 트랜잭션아이디(tx_id) : <%=result.getTx_id()%></li>
 				</ul>
 			</fieldset>
 		 </div>
