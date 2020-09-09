@@ -17,7 +17,6 @@
             <li><a href="KakaocertService/getESignState.jsp">getESignState</a> - 전자서명 서명상태 확인 API</li>
             <li><a href="KakaocertService/verifyESign.jsp">verifyESign</a> - 전자서명 서명검증 API (Talk Message)</li>
             <li><a href="KakaocertService/verifyESignApp.jsp">verifyESign</a> - 전자서명 서명검증 API (App to App)</li>
-
         </ul>
     </fieldset>
 
