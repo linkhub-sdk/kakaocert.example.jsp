@@ -8,24 +8,24 @@
 
 <%@ include file="common.jsp" %>
 <%@page import="com.kakaocert.api.KakaocertException"%>
-<%@page import="com.kakaocert.api.cms.ResultCMS"%>
+<%@page import="com.kakaocert.api.verifyauth.ResultVerifyAuth"%>
 
 <%
 	/*
-	 * 자동이체 출금동의 요청시 반환된 접수아이디를 통해 자동이체 출금동의 결과를 확인합니다.
+	 * 본인인증 요청시 반환된 접수아이디를 통해 서명 상태를 확인합니다.
 	 */
 
   // 이용기관코드, 파트너가 등록한 이용기관의 코드, (파트너 사이트에서 확인가능)
   String ClientCode = "020040000001";
 
-	// 자동이체 출금동의 요청시 반환된 접수아이디
-	String receiptID = "020050414231900001";
+	// 본인인증 요청시 반환된 접수아이디
+	String receiptID = "020090916081800001";
 
-  ResultCMS result = null;
+  ResultVerifyAuth result = null;
 
 	try {
 
-    result = kakaocertService.getCMSResult(ClientCode, receiptID);
+    result = kakaocertService.getVerifyAuthState(ClientCode, receiptID);
 
 	} catch(KakaocertException ke) {
     throw ke;
@@ -36,15 +36,15 @@
 			<p class="heading1">Response </p>
 			<br/>
 			<fieldset class="fieldset1">
-				<legend>자동이체 출금동의 결과정보 확인</legend>
+				<legend>본인인증 서명상태 확인</legend>
 				<ul>
-          <li>receiptID(접수아이디) : <%= result.getReceiptID()%></li>
+					<li>receiptID(접수아이디) : <%= result.getReceiptID()%></li>
         	<li>clientCode (이용기관코드) : <%= result.getClientCode()%></li>
         	<li>clientName (이용기관명) : <%= result.getClientName()%></li>
         	<li>subClientName (별칭) : <%= result.getSubClientName()%></li>
         	<li>subClientCode (별칭코드) : <%= result.getSubClientCode()%></li>
         	<li>state (상태) : <%= result.getState()%></li>
-        	<li>signedData (전자서명 데이터 전문) : <%= result.getSignedData()%></li>
+
         	<li>expires_in (인증요청 만료시간(초)	) : <%= result.getExpires_in()%></li>
           <li>callCenterNum(고객센터 전화번호) : <%= result.getCallCenterNum()%></li>
           <li>tmstitle (인증요청 메시지 제목) : <%= result.getTmstitle()%></li>
@@ -58,7 +58,6 @@
           <li>completeDT (수신자 카카오톡 전자서명 완료일시	) : <%= result.getCompleteDT()%></li>
           <li>verifyDT (서명 검증일시) : <%= result.getVerifyDT()%></li>
           <li>payload (payload) : <%= result.getPayload()%></li>
-
 				</ul>
 			</fieldset>
 		 </div>

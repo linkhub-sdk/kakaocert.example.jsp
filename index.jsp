@@ -14,8 +14,10 @@
         <legend>전자서명 API</legend>
         <ul>
             <li><a href="KakaocertService/requestESign.jsp">requestESign</a> - 전자서명 요청 API</li>
-            <li><a href="KakaocertService/getESignResult.jsp">getESignResult</a> - 전자서명 결과확인 API (Talk Message 방식)</li>
-            <li><a href="KakaocertService/getESignResultApp.jsp">getESignResult</a> - 전자서명 결과확인 API (App To App 방식)</li>
+            <li><a href="KakaocertService/getESignState.jsp">getESignState</a> - 전자서명 서명상태 확인 API</li>
+            <li><a href="KakaocertService/verifyESign.jsp">verifyESign</a> - 전자서명 서명검증 API (Talk Message)</li>
+            <li><a href="KakaocertService/verifyESignApp.jsp">verifyESign</a> - 전자서명 서명검증 API (App to App)</li>
+
         </ul>
     </fieldset>
 
@@ -23,7 +25,8 @@
         <legend>본인인증 API</legend>
         <ul>
             <li><a href="KakaocertService/requestVerifyAuth.jsp">requestVerifyAuth</a> - 본인인증 요청 API</li>
-            <li><a href="KakaocertService/getVerifyAuthResult.jsp">getVerifyAuthResult</a> - 본인인증 결과확인 API</li>
+            <li><a href="KakaocertService/getVerifyAuthState.jsp">getVerifyAuthState</a> - 본인인증 서명상태 확인 API</li>
+            <li><a href="KakaocertService/verifyAuth.jsp">verifyAuth</a> - 본인인증 서명검증 API</li>
         </ul>
     </fieldset>
 
@@ -31,7 +34,8 @@
         <legend>자동이체 출금동의 API</legend>
         <ul>
             <li><a href="KakaocertService/requestCMS.jsp">requestCMS</a> - 자동이체 출금동의 요청 API</li>
-            <li><a href="KakaocertService/getCMSResult.jsp">getCMSResult</a> - 자동이체 출금동의 결과 확인 API</li>
+            <li><a href="KakaocertService/getCMSState.jsp">getCMSState</a> - 자동이체 출금동의 서명상태 확인 API</li>
+            <li><a href="KakaocertService/verifyCMS.jsp">verifyCMS</a> - 자동이체 출금동의 서명검증 API</li>
         </ul>
     </fieldset>
 </div>

@@ -19,7 +19,7 @@
   // 이용기관코드, 파트너가 등록한 이용기관의 코드, (파트너 사이트에서 확인가능)
   String ClientCode = "020040000001";
 
-  // 본인인증 요청 정보 Object
+  // 자동이체 출금동의 요청 정보 Object
   RequestCMS cmsRequest = new RequestCMS();
 
   // 고객센터 전화번호, 카카오톡 인증메시지 중 "고객센터" 항목에 표시
@@ -29,13 +29,13 @@
   cmsRequest.setExpires_in(60);
 
   // 수신자 생년월일, 형식 : YYYYMMDD
-  cmsRequest.setReceiverBirthDay("19700101");
+  cmsRequest.setReceiverBirthDay("19800101");
 
   // 수신자 휴대폰번호
-  cmsRequest.setReceiverHP("01012345117");
+  cmsRequest.setReceiverHP("010111222");
 
   // 수신자 성명
-  cmsRequest.setReceiverName("테스트");
+  cmsRequest.setReceiverName("홍길동");
 
   // 예금주명
 	cmsRequest.setBankAccountName("예금주명");

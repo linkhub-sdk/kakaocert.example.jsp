@@ -29,13 +29,13 @@
   requestObj.setExpires_in(60);
 
   // 수신자 생년월일, 형식 : YYYYMMDD
-  requestObj.setReceiverBirthDay("19900108");
+  requestObj.setReceiverBirthDay("19800101");
 
   // 수신자 휴대폰번호
-  requestObj.setReceiverHP("01012345117");
+  requestObj.setReceiverHP("010111222");
 
   // 수신자 성명
-  requestObj.setReceiverName("테스트");
+  requestObj.setReceiverName("홍길동");
 
   // 인증요청 메시지 부가내용, 카카오톡 인증메시지 중 상단에 표시
   requestObj.setTMSMessage("부가메시지 내용");

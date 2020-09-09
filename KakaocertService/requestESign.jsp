@@ -22,7 +22,7 @@
 
   // AppToApp 인증요청 여부
 	// true - AppToApp 인증방식, false - Talk Message 인증방식
-	boolean isAppUseYN = true;
+	boolean isAppUseYN = false;
 
   // 전자서명 요청 정보 Object
   RequestESign eSignRequest = new RequestESign();
@@ -34,13 +34,13 @@
   eSignRequest.setExpires_in(60);
 
   // 수신자 생년월일, 형식 : YYYYMMDD
-  eSignRequest.setReceiverBirthDay("19900108");
+  eSignRequest.setReceiverBirthDay("19800101");
 
   // 수신자 휴대폰번호
-  eSignRequest.setReceiverHP("01043245117");
+  eSignRequest.setReceiverHP("010111222");
 
   // 수신자 성명
-  eSignRequest.setReceiverName("정요한");
+  eSignRequest.setReceiverName("홍길동");
 
   // 인증요청 메시지 부가내용, 카카오톡 인증메시지 중 상단에 표시
   // AppToApp 인증요청 방식 이용시 적용되지 않음
