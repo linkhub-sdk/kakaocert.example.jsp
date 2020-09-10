@@ -13,6 +13,7 @@
 <%
 	/*
 	 * [App to App] 전자서명 요청시 반환된 접수아이디를 통해 서명을 검증합니다.
+   * - 서명검증시 전자서명 데이터 전문(signedData)이 반환됩니다.
 	 */
 
   // 이용기관코드, 파트너가 등록한 이용기관의 코드, (파트너 사이트에서 확인가능)
@@ -21,7 +22,7 @@
 	// 전자서명 요청시 반환된 접수아이디
 	String receiptID = "020090916030900001";
 
-  // App To App 앱스킴 응답 서명값
+  // AppToApp 앱스킴 성공처리시 반환되는 서명값(iOS-sig, Android-signature)
   String signature = "abcd";
 
   VerifyResult result = null;

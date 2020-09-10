@@ -96,8 +96,8 @@
 			<fieldset class="fieldset1">
 				<legend>전자서명 요청</legend>
 				<ul>
-					<li>접수아이디(receiptId) : <%=result.getReceiptId()%></li>
-          <li>[AppToApp 앱스킴 호출용] 카카오톡 트랜잭션아이디(tx_id) : <%=result.getTx_id()%></li>
+					<li>접수아이디 (receiptId) : <%=result.getReceiptId()%></li>
+          <li>카카오톡 트랜잭션아이디 (tx_id)[AppToApp 앱스킴 호출용] : <%=result.getTx_id()%></li>
 				</ul>
 			</fieldset>
 		 </div>

@@ -13,7 +13,7 @@
 
 <%
 	/*
-	 * 카카오톡 사용자에게 자동이체 출금동의를 요청합니다.
+	 * 카카오톡 사용자에게 자동이체 출금동의 서명을 요청합니다.
 	 */
 
   // 이용기관코드, 파트너가 등록한 이용기관의 코드, (파트너 사이트에서 확인가능)
@@ -95,7 +95,7 @@
 			<p class="heading1">Response</p>
 			<br/>
 			<fieldset class="fieldset1">
-				<legend>자동이체 출금동의 요청</legend>
+				<legend>자동이체 출금동의 서명요청</legend>
 				<ul>
 					<li>접수아이디 : <%=receiptID%></li>
 				</ul>
