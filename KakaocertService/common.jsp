@@ -22,5 +22,5 @@ Update date : 2020-10-29
 <%-- 인증토큰 발급 IP 제한 On/Off, ture-제한기능 사용(기본값-권장),  false-제한기능 미사용 --%>
 <jsp:setProperty name="kakaocertService" property="IPRestrictOnOff" value="true"/>
 
-<%-- 카카오써트 API 서비스 고정 IP 사용여부(GA), true-사용, false-미사용, 기본값(false) --%>
+<%-- 카카오써트 API 서비스 고정 IP 사용여부, true-사용, false-미사용, 기본값(false) --%>
 <jsp:setProperty name="kakaocertService" property="useStaticIP" value="false"/>
