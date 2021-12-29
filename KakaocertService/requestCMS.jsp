@@ -10,6 +10,7 @@
 
 <%@page import="com.kakaocert.api.cms.RequestCMS"%>
 <%@page import="com.kakaocert.api.KakaocertException"%>
+<%@page import="com.kakaocert.api.ResponseCMS"%>
 
 <%
     /*
@@ -18,6 +19,10 @@
 
     // 이용기관코드, 파트너가 등록한 이용기관의 코드, (파트너 사이트에서 확인가능)
     String ClientCode = "020040000001";
+    
+    // AppToApp 인증요청 여부
+    // true - AppToApp 인증방식, false - Talk Message 인증방식
+    boolean isAppUseYN = false;
 
     // 자동이체 출금동의 요청 정보 Object
     RequestCMS cmsRequest = new RequestCMS();
@@ -80,10 +85,10 @@
     // PayLoad, 이용기관이 API 요청마다 생성한 payload(메모) 값
     cmsRequest.setPayLoad("memo Info");
 
-    String receiptID = null;
+    ResponseCMS result = null;
 
     try {
-        receiptID = kakaocertService.requestCMS(ClientCode, cmsRequest);
+        result = kakaocertService.requestCMS(ClientCode, cmsRequest, isAppUseYN);
     } catch(KakaocertException ke) {
         throw ke;
     }
@@ -96,7 +101,8 @@
             <fieldset class="fieldset1">
                 <legend>자동이체 출금동의 서명요청</legend>
                 <ul>
-                    <li>접수아이디 : <%=receiptID%></li>
+                    <li>접수아이디 (receiptId) : <%=result.getReceiptId()%></li>
+                    <li>카카오톡 트랜잭션아이디 (tx_id)[AppToApp 앱스킴 호출용] : <%=result.getTx_id()%></li>
                 </ul>
             </fieldset>
         </div>

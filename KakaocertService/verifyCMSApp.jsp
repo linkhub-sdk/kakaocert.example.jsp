@@ -12,7 +12,7 @@
 
 <%
     /*
-     * [Talk Message] 자동이체 출금동의 요청시 반환된 접수아이디를 통해 서명을 검증합니다.
+     * [App to App] 자동이체 출금동의 요청시 반환된 접수아이디를 통해 서명을 검증합니다.
      * - 서명검증시 전자서명 데이터 전문(signedData)이 반환됩니다.
      * - 카카오페이 API 서비스 운영정책에 따라 검증 API는 1회만 호출할 수 있습니다. 재시도시 오류처리됩니다.
      */
@@ -23,10 +23,13 @@
     // 자동이체 출금동의 요청시 반환된 접수아이디
     String receiptID = "020090916103400001";
 
+   // AppToApp 앱스킴 성공처리시 반환되는 서명값(iOS-sig, Android-signature)
+    String signature = "abcd";
+    
     VerifyResult result = null;
 
     try {
-        result = kakaocertService.verifyCMS(ClientCode, receiptID);
+        result = kakaocertService.verifyCMS(ClientCode, receiptID, signature);
     } catch(KakaocertException ke) {
         throw ke;
     }

@@ -56,6 +56,8 @@
                     <li>completeDT (수신자 카카오톡 전자서명 완료일시	) : <%= result.getCompleteDT()%></li>
                     <li>verifyDT (서명 검증일시) : <%= result.getVerifyDT()%></li>
                     <li>payload (payload) : <%= result.getPayload()%></li>
+          			<li>appUseYN (AppToApp 인증여부) : <%= result.isAppUseYN()%></li>
+                	<li>tx_id (카카오톡 트랜잭션아이디-앱스킴 호출용) : <%= result.getTx_id()%></li>
                 </ul>
             </fieldset>
         </div>

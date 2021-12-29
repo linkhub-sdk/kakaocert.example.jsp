@@ -34,7 +34,8 @@
         <ul>
             <li><a href="KakaocertService/requestCMS.jsp">requestCMS</a> - 자동이체 출금동의 요청 API</li>
             <li><a href="KakaocertService/getCMSState.jsp">getCMSState</a> - 자동이체 출금동의 서명상태 확인 API</li>
-            <li><a href="KakaocertService/verifyCMS.jsp">verifyCMS</a> - 자동이체 출금동의 서명검증 API</li>
+            <li><a href="KakaocertService/verifyCMS.jsp">verifyCMS</a> - 자동이체 출금동의 서명검증 API (Talk Message)</li>
+            <li><a href="KakaocertService/verifyCMSApp.jsp">verifyCMS</a> - 자동이체 출금동의 서명검증 API (App to App)</li>
         </ul>
     </fieldset>
 </div>
