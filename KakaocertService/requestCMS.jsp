@@ -29,18 +29,21 @@
 
     // 고객센터 전화번호, 카카오톡 인증메시지 중 "고객센터" 항목에 표시
     cmsRequest.setCallCenterNum("1600-9999");
+    
+    // 고객센터명, 카카오톡 인증메시지 중 "고객센터명" 항목에 표시
+    cmsRequest.setCallCenterName("고객센터명");
 
     // 인증요청 만료시간(초), 최대값 : 1000,	인증요청 만료시간(초) 내에 미인증시, 만료 상태로 처리됨
     cmsRequest.setExpires_in(60);
 
     // 수신자 생년월일, 형식 : YYYYMMDD
-    cmsRequest.setReceiverBirthDay("19800101");
+    cmsRequest.setReceiverBirthDay("19700101");
 
     // 수신자 휴대폰번호
-    cmsRequest.setReceiverHP("010111222");
+    cmsRequest.setReceiverHP("01012341234");
 
     // 수신자 성명
-      cmsRequest.setReceiverName("홍길동");
+    cmsRequest.setReceiverName("홍길동");
 
     // 예금주명
     cmsRequest.setBankAccountName("예금주명");

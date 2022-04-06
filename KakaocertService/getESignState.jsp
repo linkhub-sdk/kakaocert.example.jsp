@@ -19,7 +19,7 @@
     String ClientCode = "020040000001";
 
     // 전자서명 요청시 반환된 접수아이디
-    String receiptID = "020090916030900001";
+    String receiptID = "022040610472600001";
 
     ResultESign result = null;
 
@@ -44,6 +44,7 @@
                     <li>state (상태) : <%= result.getState()%></li>
                     <li>expires_in (인증요청 만료시간(초)) : <%= result.getExpires_in()%></li>
                     <li>callCenterNum(고객센터 전화번호) : <%= result.getCallCenterNum()%></li>
+                    <li>callCenterName(고객센터명) : <%= result.getCallCenterName()%></li>
                     <li>tmstitle (인증요청 메시지 제목) : <%= result.getTmstitle()%></li>
                     <li>tmsmessage (인증요청 메시지 부가내용) : <%= result.getTmsmessage()%></li>
                     <li>allowSimpleRegistYN	(은행계좌 실명확인 생략여부) : <%= result.isAllowSimpleRegistYN()%></li>
