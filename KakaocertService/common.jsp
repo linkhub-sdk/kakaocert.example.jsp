@@ -19,8 +19,11 @@ Update date : 2022-04-06
 <%-- 비밀키, 사용자 인증에 사용되는 정보이므로 유출에 주의 --%>
 <jsp:setProperty name="kakaocertService" property="secretKey" value="SwWxqU+0TErBXy/9TVjIPEnI0VTUMMSQZtJf3Ed8q3I="/>
 
-<%-- 인증토큰 발급 IP 제한 On/Off, ture-제한기능 사용(기본값-권장),  false-제한기능 미사용 --%>
+<%-- 인증토큰 발급 IP 제한 On/Off, true-사용, false-미사용  기본값(true)--%>
 <jsp:setProperty name="kakaocertService" property="IPRestrictOnOff" value="true"/>
 
 <%-- 카카오써트 API 서비스 고정 IP 사용여부, true-사용, false-미사용, 기본값(false) --%>
 <jsp:setProperty name="kakaocertService" property="useStaticIP" value="false"/>
+
+<%-- 로컬시스템 시간 사용여부 true-사용, false-미사용, 기본값(true) --%>
+<jsp:setProperty name="kakaocertService" property="useLocalTimeYN" value="true"/>
