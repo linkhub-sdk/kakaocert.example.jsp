@@ -53,7 +53,7 @@
 
     // Token 원문, 보안을 위해 1회용으로 생성
     // 인증완료시, getVerifyAuthResult API의 returnToken 항목값으로 반환
-    requestObj.setToken("20200504-001");
+    requestObj.setToken("20220504-001");
 
     /*
      * 은행계좌 실명확인 생략여부

@@ -19,7 +19,7 @@
     String ClientCode = "020040000001";
 
     // 자동이체 출금동의 요청시 반환된 접수아이디
-    String receiptID = "022040610495100001";
+    String receiptID = "022050610495100001";
 
     ResultCMS result = null;
 

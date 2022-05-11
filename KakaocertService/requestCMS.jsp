@@ -55,7 +55,7 @@
     cmsRequest.setBankCode("004");
 
     // 납부자 식별번호, 이용기관에서 부여한 고객식별번호
-    cmsRequest.setClientUserID("20200504-001");
+    cmsRequest.setClientUserID("20220504-001");
 
     // 인증요청 메시지 부가내용, 카카오톡 인증메시지 중 상단에 표시
     cmsRequest.setTMSMessage("부가메시지 내용");

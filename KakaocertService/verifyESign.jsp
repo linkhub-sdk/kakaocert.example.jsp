@@ -21,7 +21,7 @@
     String ClientCode = "020040000001";
 
     // 전자서명 요청시 반환된 접수아이디
-    String receiptID = "020090916030900001";
+    String receiptID = "022050916030900001";
 
     VerifyResult result = null;
 
